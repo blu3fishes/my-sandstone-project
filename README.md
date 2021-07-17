@@ -1,2 +1,2 @@
 # advanced-craft
-Datapack for Minecraft Dungeons &amp; Rare items in Survival
+Datapack for More Minecraft Survival Contents &amp; Rare items in Survival
