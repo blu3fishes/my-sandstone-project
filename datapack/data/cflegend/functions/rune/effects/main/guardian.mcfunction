@@ -1,0 +1,1 @@
+execute as @s[tag=!guardian] run function cflegend:rune/effects/main/reset

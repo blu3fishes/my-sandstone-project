@@ -1,0 +1,1 @@
+execute as @s[tag=!mystic] run function cflegend:rune/effects/main/reset
