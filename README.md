@@ -3,6 +3,10 @@
 Craft your weapon of legend!
 
 Craft Legend Mod, hereinafter referred to as 'CF', is The Survival Datapack which is JRPG-like elements addon.
+<hr/>
+전설의 무기를 만들어라!
+
+크래프트 레전드 모드 (이하 CF모드) 는 JRPG 스타일의 요소를 추가한 애드온 형 서바이벌 게임 데이터팩입니다.
 
 > **Main Rune**
 
