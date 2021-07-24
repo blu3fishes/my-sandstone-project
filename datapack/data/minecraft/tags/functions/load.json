@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "cflegend:display_message",
     "cflegend:rune/init"
   ]
 }

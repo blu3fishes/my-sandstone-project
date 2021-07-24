@@ -1,0 +1,7 @@
+scoreboard objectives remove runeMain
+scoreboard objectives remove runeSub1
+scoreboard objectives remove runeSub2
+scoreboard objectives remove runeBrute
+scoreboard objectives remove runeGuard
+scoreboard objectives remove runeMystic
+scoreboard objectives remove runePhantom
