@@ -8,6 +8,7 @@ Craft Legend Mod, hereinafter referred to as 'CF', is The Survival Datapack whic
 
 크래프트 레전드 모드 (이하 CF모드) 는 JRPG 스타일의 요소를 추가한 애드온 형 서바이벌 게임 데이터팩입니다.
 
+# 1. Rune
 > **Main Rune**
 
 ㅁ **주 룬**
@@ -43,6 +44,20 @@ Craft Legend Mod, hereinafter referred to as 'CF', is The Survival Datapack whic
 4-1. **Phantom Rune : Effect**
  - `12` 초 마다 피격 당하지 않을 시 `투명화` , `힘 III`, `공격력 x 200%` 적용, 성공적으로 타격시 불사의 토템 이펙트가 터짐.
  - 상시 ` 공격속도 -40% ` 적용.
+
+
+> **Sub Runes**  || 2개씩 중복가능 착용 ||
+
+-  **생명석 (+2최대체력)**
+-  **수호석 (+0.5방어강도)**
+-  **강화석 (+1공격력)**
+
+ㅁ 부가룬은 주 룬을 착용해야 착용가능.
+착용방법 : 아이템 들고 우클릭시 아이템 사라지면서 채팅창에 뜸. 어느쪽 룬과 교체할 것인지 해당 룬을 클릭하면 바뀐다.
+
+`생명석 : 베리 + 에메랄드 블럭`
+`수호석 : 청금석 + 에메랄드 블럭`
+`강화석 : 레드스톤 + 에메랄드블럭`
 
 # Sandstone project
 
