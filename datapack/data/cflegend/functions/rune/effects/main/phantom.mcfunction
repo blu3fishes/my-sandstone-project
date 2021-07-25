@@ -1,1 +1,0 @@
-execute as @s[tag=!phantom] run function cflegend:rune/effects/main/reset
