@@ -1,4 +1,4 @@
-import {scoreboard, MCFunction} from 'sandstone';
+import {scoreboard, MCFunction, functionCmd} from 'sandstone';
 
 const dummies = [];
 const dmgDealt = 'cf_dmgDealt';
@@ -19,5 +19,5 @@ MCFunction('static/init', () => {
 });
 
 MCFunction('static/loop', () => {
-    
+    functionCmd('cflegend:rune/loop');
 }, {runEachTick:true});
