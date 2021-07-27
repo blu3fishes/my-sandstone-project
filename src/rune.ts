@@ -124,7 +124,7 @@ MCFunction(mainIndex, () => {
 // subrune effects.
 MCFunction(subReset, () =>{
     // if tag=subreset1, reset sub1 effects
-
+    console.log('yeet');
     // if tag=subreset2, reset sub2 effects
 });
 
@@ -180,7 +180,7 @@ MCFunction(subIndex, () => {
 
 const items = ['brutal', 'guardian', 'mystic', 'phantom', ''];
 const item_codes = [];
-const item_locations = addNamespaceArr(); // use map function so that build array via 'items'
+// const item_locations = addNamespaceArr(); // use map function so that build array via 'items'
 function get_custom_craft(item:string, item_location:string, give_code:string):void{
     MCFunction(item_location, () => {
 
