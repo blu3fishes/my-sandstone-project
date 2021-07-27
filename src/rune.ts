@@ -1,5 +1,6 @@
-import { tag, scoreboard, data, effect, execute, MCFunction, say, playsound, coordinatesParser, title, functionCmd, Tag, Selector, attribute, Recipe, clear, NBT } from 'sandstone';
+import { tag, scoreboard, data, effect, execute, MCFunction, say, playsound, coordinatesParser, title, functionCmd, Tag, Selector, attribute, Recipe, clear, NBT, particle, _, Objective } from 'sandstone';
 import { Attribute } from 'sandstone/commands/implementations';
+import { notDeepEqual } from 'assert';
 // define Variables.
 const namespace = 'cflegend:';
 function addNamespace(variable:string):string {
@@ -109,12 +110,11 @@ MCFunction(mainIndex, () => {
 
         execute.as('@s[tag=phantom,scores={runePhantom=240..}]').run.effect.give('@s', 'minecraft:invisiblity', 3, 0, true);
         execute.as('@s[tag=phantom,scores={runePhantom=240..}]').run.effect.give('@s', 'minecraft:strength', 3, 2, true);
-        attribute('@s[tag=phantom,scores={runePhantom=240..}', 'minecraft:generic.attack_damage').add('uuid?', 'phm_chrg', 2, 'multiply_base');
+        attribute('@s[tag=phantom,scores={runePhantom=240..}', 'minecraft:generic.attack_damage').add('257bf011-5efe-4655-a29a-5169df92f2a8', 'phm_chrg', 2, 'multiply_base');
 
-        attribute('@s[scores={runePhantom=..239}]', 'minecraft:generic.attack_damage').remove('uuid?');
+        attribute('@s[scores={runePhantom=..239}]', 'minecraft:generic.attack_damage').remove('257bf011-5efe-4655-a29a-5169df92f2a8');
         execute.at('@s[tag=phantom,scores={runePhantom=240..,cf_dmgGiven=1..}').run.playsound('minecraft:item.totem.use', 'master', '@a', coordinatesParser(['~', '~', '~']), 1, 1, 0);
         execute.at('@s[tag=phantom,scores={runePhantom=240..,cf_dmgGiven=1..}').run.particle('minecraft:totem_of_undying', coordinatesParser(['~', '~', '~']), [0.7, 0.7, 0.7], 0.4, 300, 'force', '@a');
-
         scoreboard.players.set('@s[tag=phantom,scores={cf_dmgTaken=1..}', 'runePhantom', 0);
         scoreboard.players.set('@s[tag=phantom,scores={runePhantom=240..,cf_dmgGiven=1..}', 'runePhantom', 0);
         
@@ -122,15 +122,33 @@ MCFunction(mainIndex, () => {
     });
 })();
 // subrune effects.
+
+const self = Selector('@s');
+const all = Selector('@a');
+const sub1 = Objective.get('runeSub1');
+
 MCFunction(subReset, () =>{
     // if tag=subreset1, reset sub1 effects
-    console.log('yeet');
+    _.if(sub1(self).matches(1), () => {
+        
+    });
+    _.if(sub1(self).matches(2), () => {
+
+    });
+    _.if(sub1(self).matches(3), () => {
+
+    });
     // if tag=subreset2, reset sub2 effects
 });
 
 MCFunction(subIndex, () => {
     //if sub1 atk, hlt, def
+    _.if(sub1(all).matches(1), () => {
+        execute.as('@s').run.functionCmd('cflegend:rune/effects/sub/atk');
+        MCFunction('cflegend:rune/effects/sub/atk', () => {
 
+        });
+    })
     //and if sub2 atk, hlt, def
 });
 
@@ -183,7 +201,7 @@ const item_codes = [];
 // const item_locations = addNamespaceArr(); // use map function so that build array via 'items'
 function get_custom_craft(item:string, item_location:string, give_code:string):void{
     MCFunction(item_location, () => {
-
+        
     });
 }
 
