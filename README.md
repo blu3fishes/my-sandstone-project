@@ -91,7 +91,7 @@ Craft Legend Mod, hereinafter referred to as 'CF', is The Survival Datapack whic
 신발: +2방어 -2% 이동속도
 ```
 
-- 사슬(8방어, +10%이동속도)
+- 사슬(8방어, +20%이동속도)
 ```
 투구 : +2방어, +4%이속
 상체 : +3방어, +10%이속
