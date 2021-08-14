@@ -3,6 +3,7 @@ import { Attribute } from 'sandstone/commands/implementations';
 import { notDeepEqual } from 'assert';
 // define Variables.
 const namespace = 'cflegend:';
+
 function addNamespace(variable:string):string {
     return namespace + variable;
 }
@@ -49,18 +50,6 @@ const uiCode = [
         })
     });
 })();
-
-// reset main runes.
-MCFunction(mainReset, () => {
-    execute.at('@s').run.playsound('minecraft:block.respawn_anchor.charge', 'master', '@s', coordinatesParser(['~', '~', '~']), 1, 1.2, 0);
-    for(let i = 1; i<mainRunes.length; ++i){
-        tag('@s').remove(mainRunesName[i]);
-    }
-    for(let i = 1; i<mainRunes.length; ++i){
-        execute.as(`@s[scores={runeMain=${i}}]`).run.tag('@s').add(mainRunesName[i]);
-        scoreboard.players.set('@s', scoreNames[i+2], 0);
-    }
-});
 
 // index function of main rune effects.
 MCFunction(mainIndex, () => {
