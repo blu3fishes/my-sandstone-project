@@ -1,12 +1,12 @@
 import type { SandstoneConfig } from 'sandstone'
 
 export default {
-  name: 'datapack',
+  name: 'Craft Legend',
   description: [ 'A ', { text: 'Craft Legend', color: 'gold' }, ' data pack.' ],
-  formatVersion: 7,
+  formatVersion: 8,
   namespace: 'cflegend',
   packUid: 'DLz1g4TW',
-  saveOptions: { path: '.' },
+  saveOptions: { path: './dist/' },
   onConflict: {
     default: 'warn',
   },
