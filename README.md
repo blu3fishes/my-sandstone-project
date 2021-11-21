@@ -10,6 +10,7 @@ Craft Legend Mod, hereinafter referred to as 'CF', is The Survival Datapack whic
 
 <hr/>
 <h3>주요 변경점</h3>
+
 # 1. 몹 강화
 
 강화 요소로 인한 인플레이션과 난이도를 위해 조정하였습니다.
