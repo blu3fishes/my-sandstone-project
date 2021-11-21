@@ -1,5 +1,5 @@
 {
-  "name": "test1",
+  "name": "cflegend",
   "version": "1.0.0",
   "description": "A data pack created with Sandstone",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "sandstone": "^0.13.2"
   },

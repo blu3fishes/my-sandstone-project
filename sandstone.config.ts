@@ -9,5 +9,5 @@ export default {
   saveOptions: { path: './dist/' },
   onConflict: {
     default: 'warn',
-  },
+  }
 } as SandstoneConfig
