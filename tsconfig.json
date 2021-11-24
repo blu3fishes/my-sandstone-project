@@ -14,7 +14,8 @@
     "allowSyntheticDefaultImports": false,
     "noEmit": true,
     "skipLibCheck": true,
-    "outDir": "build"
+    "outDir": "build",
+    "experimentalDecorators": true
   },
   "include": [
     "src"

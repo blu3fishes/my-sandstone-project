@@ -1,17 +1,16 @@
-import { MCFunction } from 'sandstone';
+import { MCFunction, say } from 'sandstone';
+import { isMCFunction } from '../decorators/isMCFunction';
 import {Stat} from '../model/Stat';
 
 export class StatController {
-    mainDir = 'controller/stat_controller';
-    model = new Stat();
+    model;
     constructor() {
         // 모든 메서드를 한번씩 실행
-        this.checkStatClick(this.mainDir);
+        this.model = new Stat();
     }
-
-    checkStatClick(dir):void {
-        MCFunction(dir, () => {
-            
-        }, {onConflict:"append"});
+    
+    @isMCFunction('controller/stat_check')
+    checkStatClick():void {
+        say('HI');
     }
 }

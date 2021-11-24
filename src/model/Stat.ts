@@ -8,10 +8,5 @@ export class Stat {
 	dexStat = Objective.create('model.dex', 'dummy');
 	intStat = Objective.create('model.int', 'dummy');
 	lucStat = Objective.create('model.luc', 'dummy');
-
-	constructor() {
-		MCFunction('model/stat', () => {
-			tellraw('@a', 'Stat Model Loaded');
-		}, { runOnLoad: true });
-	}
+    constructor(){}
 }
