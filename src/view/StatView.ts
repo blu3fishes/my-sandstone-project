@@ -1,12 +1,12 @@
 import { MCFunction, tellraw } from "sandstone";
+import { isMCFunction } from "../decorators/isMCFunction";
 
 export class StatView {
-    constructor() {
-        this.viewStat();
-    }
-    viewStat() {
-        MCFunction('view/view_stat', () => {
-            tellraw('@s', 'showing stats of mine...');
-        });
-    }
+  constructor() {
+    this.viewStat();
+  }
+  @isMCFunction("view/view_stat")
+  viewStat() {
+    tellraw("@s", "showing stats of mine...");
+  }
 }
