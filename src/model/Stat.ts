@@ -1,5 +1,5 @@
 import { MCFunction, Objective, tellraw } from "sandstone";
-import { MainModel } from "./MainModel";
+import { MainModel } from "./GlobalValues";
 
 export class Stat {
   heaStat = Objective.create("cf.hea", "dummy");

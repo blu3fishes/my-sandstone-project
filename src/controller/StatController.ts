@@ -1,5 +1,5 @@
 import { MCFunction, say, Selector, _ } from "sandstone";
-import { isMCFunction } from "../decorators/isMCFunction";
+import { isMCFunction } from "../modules/MVCStone";
 import { Stat } from "../model/Stat";
 
 export class StatController {

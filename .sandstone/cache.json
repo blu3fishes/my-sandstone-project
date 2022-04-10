@@ -1,0 +1,13 @@
+{
+  "/root/my-sandstone-project/src": {
+    "files": {
+      "pack.mcmeta": "f0db1ce54c3b23722d1ebf865128e881",
+      "data/cflegend/functions/foo/sayhi.mcfunction": "f5c706518b474238528c2f2e4be4f98a",
+      "data/cflegend/functions/foo/loop.mcfunction": "d7ed86e2553fb56083d40779307f71c3",
+      "data/cflegend/functions/__init__.mcfunction": "303f8a0f3072569ddf74680d9f6c786f",
+      "data/minecraft/tags/functions/tick.json": "ae4a5cd5555178f0acbae47963125105",
+      "data/minecraft/tags/functions/load.json": "946ea63ab024fbdbc7e061b68ab8e171"
+    },
+    "resultFolder": "dist/Craft Legend"
+  }
+}
