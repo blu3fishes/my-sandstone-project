@@ -1,4 +1,4 @@
-import { MCFunction } from "sandstone";
+import { MCFunction, Objective } from "sandstone";
 import { FooController } from "../controller/FooController";
 
 export function isMCFunction(dir) {
@@ -75,4 +75,19 @@ export function isLoopBy(dir, tick) {
       );
     };
   };
+}
+
+// scoreboard의 정의를 하기 위한 새로운 클래스
+export class MVCScoreboard {
+  scoreboardName;
+  scoreboard;
+  criteria;
+  constructor(scoreboardName:string, criteria:string) {
+    this.scoreboardName = scoreboardName;
+    this.criteria = criteria;
+    this.scoreboard = Objective.create(this.scoreboardName, this.criteria);
+  }
+  getSelector(selector:string): any {
+    return this.scoreboard(selector);
+  }
 }
