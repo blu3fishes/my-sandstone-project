@@ -15,7 +15,8 @@
       "pack.mcmeta": "fdbae9607ff518f6e3a240355e06783f",
       "data\\cflegend\\functions\\foo\\sayhi.mcfunction": "0f34242460ecbfc6cd5427d0fcf2fb0f",
       "data\\cflegend\\functions\\foo\\loop.mcfunction": "1428cb9b749d7a953b182f8ad8582986",
-      "data\\cflegend\\functions\\__init__.mcfunction": "149b30b8d44dd20f2ab38ee79420cc0e",
+      "data\\cflegend\\functions\\__init__.mcfunction": "3673f2460d612cf1ec1c89e09eacc89e",
+      "data\\cflegend\\loot_tables\\footable.json": "77fc2484022e1c4691a4bff384191492",
       "data\\minecraft\\tags\\functions\\tick.json": "d0d9b3c1f4620c79389713c44018fb1e",
       "data\\minecraft\\tags\\functions\\load.json": "d60a9297ed2395f456cd5fbf5dcb3c98"
     },

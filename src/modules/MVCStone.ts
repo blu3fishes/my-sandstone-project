@@ -1,5 +1,5 @@
 import { MCFunction, Objective } from "sandstone";
-import { FooController } from "../controller/FooController";
+import { FooController } from "../foo/FooController";
 
 export function isMCFunction(dir) {
   return function (
@@ -20,12 +20,14 @@ export function isMCFunction(dir) {
   };
 }
 
-export function Controller(target: any) {
-  console.log("runned");
-  const tg = new target();
-  Object.getOwnPropertyNames (Object.getPrototypeOf(tg))
-  .filter(propName => (propName !== 'constructor' && typeof tg[propName] === 'function'))
-  .forEach(propName => tg[propName]());
+export function Controller() {
+  return (target: any) => {
+    console.log("runned");
+    const tg = new target();
+    Object.getOwnPropertyNames(Object.getPrototypeOf(tg))
+      .filter(propName => (propName !== 'constructor' && typeof tg[propName] === 'function'))
+      .forEach(propName => tg[propName]());
+  }
 }
 
 export function isLoopTick(dir) {
@@ -71,7 +73,7 @@ export function isLoopBy(dir, tick) {
         () => {
           originMethod.apply(this, args);
         },
-        { onConflict: "append", runEach:tick }
+        { onConflict: "append", runEach: tick }
       );
     };
   };
@@ -82,12 +84,12 @@ export class MVCScoreboard {
   scoreboardName;
   scoreboard;
   criteria;
-  constructor(scoreboardName:string, criteria:string) {
+  constructor(scoreboardName: string, criteria: string) {
     this.scoreboardName = scoreboardName;
     this.criteria = criteria;
     this.scoreboard = Objective.create(this.scoreboardName, this.criteria);
   }
-  getSelector(selector:string): any {
+  getSelector(selector: string): any {
     return this.scoreboard(selector);
   }
 }
