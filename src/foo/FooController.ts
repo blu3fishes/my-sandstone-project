@@ -1,4 +1,4 @@
-import { Controller, isLoopTick, isMCFunction } from "../modules/MVCStone";
+import { Controller, isLoopTick, isMCFunction } from "mvcstone";
 import { FooService } from "./FooService";
 
 @Controller()

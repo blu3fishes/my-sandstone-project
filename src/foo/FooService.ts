@@ -1,5 +1,5 @@
 import { LootTable, Objective, say, tellraw } from "sandstone";
-import { MVCScoreboard } from "../modules/MVCStone";
+import { MVCScoreboard } from "mvcstone";
 import { Foo } from "./Foo";
 
 // implements detail logics where is used in its controller
@@ -8,7 +8,7 @@ export class FooService {
   // in here you can define all of the scoreboards or variables.
   private foos = new Foo();
   private anotherClass = new MVCScoreboard("anoScoreboard", "dummy");
-  private loot_table1 = LootTable('footable', 
+  private loot_table1 = LootTable('footable',
     {
       "pools": [
           {
@@ -28,7 +28,8 @@ export class FooService {
     console.log("hello");
     tellraw("@s", [
       { text: "ff" },
-      { score: this.foos.foo, selector: "@s" },
+      // its too unefficient to use score this way.
+      {score: this.foos.foo, selector: "@s" },
     ]);
   }
   
@@ -43,7 +44,7 @@ export class FooService {
     const myScore = fooScoreboard.getSelector(who);
     tellraw("@a", [
       { text: "my score is " },
-      { score: fooScoreboard.scoreboard, selector: who },
+      fooScoreboard.getTellrawScore(who),
       { text: "score!" }
     ]);
     myScore.add(1);

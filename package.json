@@ -11,6 +11,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "mvcstone": "github:blu3fishes/mvcstone",
     "sandstone": "^0.13.6"
   },
   "devDependencies": {

@@ -1,5 +1,5 @@
 import { Objective } from "sandstone";
-import { MVCScoreboard } from "../modules/MVCStone";
+import { MVCScoreboard } from "mvcstone";
 
 export class Foo {
   foo;
